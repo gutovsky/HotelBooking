@@ -1,0 +1,28 @@
+﻿  Booking.cpp
+  BookingApp.cpp
+D:\playground\Yandex task Booking hotels\HotelBooking\BookingList.h(24,75): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\playground\Yandex task Booking hotels\HotelBooking\BookingDB.h(22,115): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\playground\Yandex task Booking hotels\HotelBooking\RequestFactory.h(26,113): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\playground\Yandex task Booking hotels\HotelBooking\ProtocolParser.h(23,91): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  BookingDB.cpp
+D:\playground\Yandex task Booking hotels\HotelBooking\BookingList.h(24,75): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\playground\Yandex task Booking hotels\HotelBooking\BookingDB.h(22,115): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\playground\Yandex task Booking hotels\HotelBooking\BookingDB.cpp(14,125): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  BookingDBInterface.cpp
+  BookingList.cpp
+D:\playground\Yandex task Booking hotels\HotelBooking\BookingList.h(24,75): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\playground\Yandex task Booking hotels\HotelBooking\BookingList.cpp(33,87): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  Requests.cpp
+  Hotel.cpp
+  HotelBooking.cpp
+  ProtocolParserInterface.cpp
+  RequestInterface.cpp
+  RequestFactory.cpp
+D:\playground\Yandex task Booking hotels\HotelBooking\RequestFactory.h(26,113): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\playground\Yandex task Booking hotels\HotelBooking\RequestFactory.cpp(33,128): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  RequestFactoryInterface.cpp
+  ProtocolParser.cpp
+D:\playground\Yandex task Booking hotels\HotelBooking\ProtocolParser.h(23,91): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\playground\Yandex task Booking hotels\HotelBooking\ProtocolParser.cpp(24,122): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  Generating Code...
+  HotelBooking.vcxproj -> D:\playground\Yandex task Booking hotels\HotelBooking\Debug\HotelBooking.exe
