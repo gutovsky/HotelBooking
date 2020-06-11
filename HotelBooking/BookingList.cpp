@@ -30,7 +30,7 @@ unsigned int BookingList::GetNumOfClients(long long curr_time)
 	return m_num_of_clients;
 }
 
-void BookingList::AddNewBooking(const Booking& new_booking) throw (NewBookingException)
+void BookingList::AddNewBooking(const Booking& new_booking)
 {
 	try
 	{

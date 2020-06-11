@@ -23,7 +23,7 @@ public:
 	};
 
 	void Add(Request::RequestType type, RequestFactoryInterface::RequestCreateFunc creation_function);
-	std::shared_ptr<Request> Create(const std::string& params, Request::RequestType type) throw (WrongTypeException);
+	std::shared_ptr<Request> Create(const std::string& params, Request::RequestType type);
 
 private:
 	typedef std::map<Request::RequestType, RequestCreateFunc> FactoryMap;

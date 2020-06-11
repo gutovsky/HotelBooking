@@ -30,7 +30,7 @@ void RequestFactory::Add(Request::RequestType type, RequestCreateFunc creation_f
 	m_factory_map[type] = creation_function;
 }
 
-std::shared_ptr<Request> RequestFactory::Create(const std::string& params, Request::RequestType type) throw (WrongTypeException)
+std::shared_ptr<Request> RequestFactory::Create(const std::string& params, Request::RequestType type)
 {
 	if (1 == m_factory_map.count(type))
 	{

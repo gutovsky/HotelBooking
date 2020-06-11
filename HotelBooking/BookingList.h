@@ -21,7 +21,7 @@ public:
 		}
 	};
 
-	void AddNewBooking(const Booking& new_booking) throw (NewBookingException);
+	void AddNewBooking(const Booking& new_booking);
 	unsigned long GetNumOfRooms(long long curr_time);
 	unsigned int GetNumOfClients(long long curr_time);
 

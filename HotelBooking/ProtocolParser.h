@@ -20,7 +20,7 @@ public:
 			return "Bad request";
 		}
 	};
-	std::shared_ptr<Request> GetRequest(const std::string& buffer) throw (BadRequestException);
+	std::shared_ptr<Request> GetRequest(const std::string& buffer);
 private:
 	Request::RequestType GetType(std::string& buffer);
 	std::shared_ptr<RequestFactoryInterface> m_request_factory;

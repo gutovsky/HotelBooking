@@ -11,7 +11,7 @@ BookingDB::BookingDB(int period_to_save_in_sec) :
 	//empty;
 }
 
-void BookingDB::AddNewBooking(const std::string& hotel_name, const Booking& booking) throw (BookingList::NewBookingException)
+void BookingDB::AddNewBooking(const std::string& hotel_name, const Booking& booking)
 {
 	BookingMapIt it = hotel_bookings.find(hotel_name);
 	m_curr_time = booking.GetTime();

@@ -21,7 +21,7 @@ ProtocolParser::ProtocolParser(std::shared_ptr<RequestFactoryInterface> factory)
 	m_request_factory->Add(Request::ROOMS, RoomsRequest::Create);
 }
 
-std::shared_ptr<Request> ProtocolParser::GetRequest(const std::string& buffer) throw (ProtocolParser::BadRequestException)
+std::shared_ptr<Request> ProtocolParser::GetRequest(const std::string& buffer)
 {
 	std::string new_buffer(buffer);
 	Request::RequestType type = GetType(new_buffer);

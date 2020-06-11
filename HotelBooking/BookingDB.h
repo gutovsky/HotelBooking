@@ -19,7 +19,7 @@ public:
 	BookingDB(const BookingDB& other_bookingDB) = delete;
 	BookingDB& operator=(const BookingDB& other_bookingDB) = delete;
 
-	void AddNewBooking(const std::string& hotel_name, const Booking& booking) throw (BookingList::NewBookingException);
+	void AddNewBooking(const std::string& hotel_name, const Booking& booking);
 	unsigned int GetNumOfClients(const std::string& hotel_name) const;
 	unsigned long GetNumOfRooms(const std::string& hotel_name) const;
 
