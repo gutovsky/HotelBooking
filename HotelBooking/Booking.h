@@ -1,5 +1,4 @@
-#ifndef BOOKING_H
-#define BOOKING_H
+#pragma once
 
 class Booking
 {
@@ -18,6 +17,4 @@ private:
 	unsigned int m_client_id;
 	unsigned int m_room_count;
 };
-
-#endif // !BOOKING_H
 

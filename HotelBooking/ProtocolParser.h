@@ -1,9 +1,9 @@
-#ifndef REQUEST_PARSER_H
-#define REQUEST_PARSER_H
+#pragma once
 
 #include "ProtocolParserInterface.h"
 #include "RequestFactoryInterface.h"
 #include "RequestInterface.h"
+#include <map>
 
 class ProtocolParser : public ProtocolParserInterface
 {
@@ -24,7 +24,6 @@ public:
 private:
 	Request::RequestType GetType(std::string& buffer);
 	std::shared_ptr<RequestFactoryInterface> m_request_factory;
+	std::map<const std::string, Request::RequestType> m_requets_types;
 };
-
-#endif // !REQUEST_PARSER_H
 

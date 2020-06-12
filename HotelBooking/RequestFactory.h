@@ -1,5 +1,4 @@
-#ifndef REQUEST_FACTORY_H
-#define REQUEST_FACTORY_H
+#pragma once
 
 #include "RequestFactoryInterface.h"
 #include <map>
@@ -31,4 +30,3 @@ private:
 	std::ostream& m_out;
 };
 
-#endif // !REQUEST_FACTORY_H

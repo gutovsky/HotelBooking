@@ -1,5 +1,4 @@
-#ifndef REQUESTS_H
-#define REQUESTS_H
+#pragma once
 
 #include "RequestInterface.h"
 #include <string>
@@ -61,6 +60,4 @@ private:
 
 	static const std::string GetHotelName(const std::string& params);
 };
-
-#endif // !REQUESTS_H
 

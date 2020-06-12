@@ -36,12 +36,6 @@
     <ClCompile Include="ProtocolParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ProtocolParserInterface.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RequestFactoryInterface.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="RequestFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -51,7 +45,7 @@
     <ClCompile Include="Requests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BookingDBInterface.cpp">
+    <ClCompile Include="RequestFactoryInterface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

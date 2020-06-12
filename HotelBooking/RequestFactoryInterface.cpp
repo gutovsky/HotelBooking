@@ -6,8 +6,3 @@ RequestFactoryInterface::RequestFactoryInterface(std::shared_ptr<BookingDBInterf
 {
 	//empty
 }
-
-RequestFactoryInterface::~RequestFactoryInterface()
-{
-	//empty
-}

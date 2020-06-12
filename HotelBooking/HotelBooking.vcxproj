@@ -150,15 +150,13 @@
     <ClCompile Include="Booking.cpp" />
     <ClCompile Include="BookingApp.cpp" />
     <ClCompile Include="BookingDB.cpp" />
-    <ClCompile Include="BookingDBInterface.cpp" />
     <ClCompile Include="BookingList.cpp" />
+    <ClCompile Include="RequestFactoryInterface.cpp" />
     <ClCompile Include="Requests.cpp" />
     <ClCompile Include="Hotel.cpp" />
     <ClCompile Include="HotelBooking.cpp" />
-    <ClCompile Include="ProtocolParserInterface.cpp" />
     <ClCompile Include="RequestInterface.cpp" />
     <ClCompile Include="RequestFactory.cpp" />
-    <ClCompile Include="RequestFactoryInterface.cpp" />
     <ClCompile Include="ProtocolParser.cpp" />
   </ItemGroup>
   <ItemGroup>

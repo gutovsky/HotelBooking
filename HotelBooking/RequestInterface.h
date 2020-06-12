@@ -1,5 +1,4 @@
-#ifndef REQUEST_H
-#define REQUEST_H
+#pragma once
 
 #include "BookingDBInterface.h"
 #include <iosfwd>
@@ -26,6 +25,4 @@ protected:
 	std::shared_ptr<BookingDBInterface> m_bookingDB;
 	std::ostream& m_out;
 };
-
-#endif REQUEST_H
 

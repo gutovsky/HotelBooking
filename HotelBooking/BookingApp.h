@@ -1,5 +1,4 @@
-#ifndef BOOKING_APP
-#define BOOKING_APP
+#pragma once
 
 #include <iostream>
 #include <memory>
@@ -25,6 +24,4 @@ private:
 	unsigned int m_num_of_requests;
 	unsigned int m_saving_period;
 };
-
-#endif // !BOOKING_APP
 

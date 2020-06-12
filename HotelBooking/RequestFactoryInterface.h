@@ -1,5 +1,4 @@
-#ifndef REQUEST_FACTORY_INTERFACE_H
-#define REQUEST_FACTORY_INTERFACE_H
+#pragma once
 
 #include <memory>
 #include <functional>
@@ -23,5 +22,4 @@ protected:
 	RequestFactoryInterface& operator=(const RequestFactoryInterface& other) = default;
 };
 
-#endif // !REQUEST_FACTORY_INTERFACE_H
-
+inline RequestFactoryInterface::~RequestFactoryInterface(void) { }

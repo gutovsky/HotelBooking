@@ -1,5 +1,4 @@
-#ifndef BOOKING_DB_INTERFACE_H
-#define BOOKING_DB_INTERFACE_H
+#pragma once
 
 #include <string>
 
@@ -19,4 +18,4 @@ protected:
 	BookingDBInterface& operator=(const BookingDBInterface& other_bookingDB) = default;
 };
 
-#endif // !BOOKING_DB_INTERFACE_H
+inline BookingDBInterface::~BookingDBInterface(void) { }

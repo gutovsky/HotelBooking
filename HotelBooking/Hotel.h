@@ -1,5 +1,4 @@
-#ifndef HOTEL_H
-#define HOTEL_H
+#pragma once
 
 #include <string>
 
@@ -18,6 +17,4 @@ private:
 };
 
 bool operator<(const Hotel& hotel, const Hotel& hotel2);
-
-#endif // !HOTEL_H
 

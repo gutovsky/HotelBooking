@@ -1,24 +1,16 @@
 #include "ProtocolParser.h"
 #include "Requests.h"
 
-/*
-class ProtocolParser : public ProtocolParserInterface
-{
-public:
-	ProtocolParser(std::shared_ptr<RequestFactoryInterface> factory);
-	~ProtocolParser(void);
-	Request* GetRequest(const std::string& buffer);
-private:
-	//GetType();
-};
-*/
-
 ProtocolParser::ProtocolParser(std::shared_ptr<RequestFactoryInterface> factory) :
-	m_request_factory(factory)
+	m_request_factory(factory), m_requets_types()
 {
 	m_request_factory->Add(Request::BOOK, BookRequest::Create);
 	m_request_factory->Add(Request::CLIENTS, ClientsRequest::Create);
 	m_request_factory->Add(Request::ROOMS, RoomsRequest::Create);
+
+	m_requets_types["BOOK"] = Request::BOOK;
+	m_requets_types["CLIENTS"] = Request::CLIENTS;
+	m_requets_types["ROOMS"] = Request::ROOMS;
 }
 
 std::shared_ptr<Request> ProtocolParser::GetRequest(const std::string& buffer)
@@ -35,19 +27,11 @@ Request::RequestType ProtocolParser::GetType(std::string& buffer)
 	position = buffer.find(" ");
 	key = buffer.substr(0, position);
 
-	if (key == "BOOK")
+	try
 	{
-		return Request::BOOK;
+		return m_requets_types[key];
 	}
-	else if (key == "CLIENTS")
-	{
-		return Request::CLIENTS;
-	}
-	else if (key == "ROOMS")
-	{
-		return Request::ROOMS;
-	}
-	else
+	catch (const std::exception&)
 	{
 		throw BadRequestException();
 	}

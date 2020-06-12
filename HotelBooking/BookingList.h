@@ -1,5 +1,4 @@
-#ifndef BOOKING_LIST_H
-#define BOOKING_LIST_H
+#pragma once
 
 #include "Booking.h"
 #include <list>
@@ -35,7 +34,3 @@ private:
 	void UpdateState(long long curr_time);
 	bool InTimeRange(long long curr_time, const Booking& booking);
 };
-
-
-#endif // !BOOKING_LIST_H
-

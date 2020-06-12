@@ -1,5 +1,4 @@
-#ifndef BOOKING_DB_H
-#define BOOKING_DB_H
+#pragma once
 
 #include "BookingDBInterface.h"
 #include "BookingList.h"
@@ -28,6 +27,3 @@ private:
 	const int m_period_to_save;
 	long long m_curr_time;
 };
-
-#endif // !BOOKING_DB_H
-

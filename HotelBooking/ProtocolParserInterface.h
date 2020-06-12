@@ -1,5 +1,4 @@
-#ifndef PROTOCOL_PARSER_INTERFACE_H
-#define PROTOCOL_PARSER_INTERFACE_H
+#pragma once
 
 #include <string>
 #include <memory>
@@ -17,4 +16,5 @@ protected:
 	ProtocolParserInterface(const ProtocolParserInterface& otherB) = default;
 	ProtocolParserInterface& operator=(const ProtocolParserInterface& other) = default;
 };
-#endif // !PROTOCOL_PARSER_INTERFACE_H
+
+inline ProtocolParserInterface::~ProtocolParserInterface(void) { }
